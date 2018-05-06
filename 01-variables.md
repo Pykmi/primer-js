@@ -4,7 +4,7 @@ All off programming can be defined as the manipulation of information. For this 
 
 Declaring new variables are done by using the correct keyword and the name of the variable. Optionally, you can also assign the variable with a value.
 
-In Javascript, what we call primitive types, are Number, String, Boolean, Null, and Undefined.
+In Javascript, what we call primitive types, are `Number`, `String`, `Boolean`, `Null`, and `Undefined`.
 
 ```javascript
 // numbers include both decimals and whole number
@@ -23,9 +23,7 @@ var empty = null;
 ```
 
 ### Keywords
-Most common keyword for declaring a variable in Javascript is `var`, however since ES6 Javascript also recognises two other keywords as well; `let` and `const`.
-
-The difference between var and let is particularly confusing many; the main difference being `scope`.
+Most common keyword for declaring a variable in Javascript is `var`, however since `ES6` Javascript also recognises two other keywords as well; `let` and `const`.
 
 ```javascript
 // var is scoped to the nearest function
@@ -40,7 +38,7 @@ ten = 10.0; // SyntaxError: Assignment to constant variable
 ```
 
 ### Let vs. Var
-The difference between the two is scope, whereas var scopes the variable to the nearest function, let scopes the variable to the nearest enclosed block.
+The difference between the two is scope, whereas `var` scopes the variable to the nearest function, `let` scopes the variable to the nearest enclosed block.
 
 ```javascript
 // example for the behaviour of var
