@@ -73,7 +73,7 @@ Var and let also have difference in behaviour in strict mode.
 ```javascript
 `use strict`
 let pi = 3.14;
-let pi = 3.142; // Duplicate declaration "pi"
+let pi = 3.142; // SyntaxError: Duplicate declaration "pi"
 ```
 
 ```javascript
