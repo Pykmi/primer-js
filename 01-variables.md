@@ -42,11 +42,13 @@ The difference between the two is scope, whereas `var` scopes the variable to th
 
 ```javascript
 // example for the behaviour of var
+
+// 'i' is NOT visible here
 function varExample() {
 	// 'i' is visible here
 
 	for(var i = 0; i < 7; i++) {
-	  // 'i' is visible here
+		// 'i' is visible here
 	}
 
 	// 'i' is visible here
@@ -58,12 +60,24 @@ function varExample() {
 function letExample() {
 	// 'e' is NOT visible here
 
-	for(var e = 0; i < 7; i++) {
-	  // 'e' is visible here
+	for(let e = 0; i < 7; i++) {
+		// 'e' is visible here
 	}
 
 	// 'e' is NOT visible here
 }
 ```
 
+Var and let also have difference in behaviour in strict mode.
 
+```javascript
+`use strict`
+let pi = 3.14;
+let pi = 3.142; // Duplicate declaration "pi"
+```
+
+```javascript
+`use strict`
+var pi = 3.14;
+var pi = 3.142; // no problem
+```
